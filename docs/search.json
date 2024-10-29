@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "seminar07.html#attendance",
+    "href": "seminar07.html#attendance",
+    "title": "Seminar 07",
+    "section": "Attendance",
+    "text": "Attendance"
+  },
+  {
+    "objectID": "seminar07.html#reminders",
+    "href": "seminar07.html#reminders",
+    "title": "Seminar 07",
+    "section": "Reminders",
+    "text": "Reminders\n\nDiscuss worksheet 6 at Thu workshop.\nMock exam Fri 2024-11-01 at 15:00, Perth Rd Accountancy."
+  },
+  {
+    "objectID": "seminar07.html#special-announcement",
+    "href": "seminar07.html#special-announcement",
+    "title": "Seminar 07",
+    "section": "Special Announcement   ",
+    "text": "Special Announcement   \nEMS Invited Lecture will take place on\nFriday, 15 Nov 2024, at 15:00 in Fulton F20\n(tea served from 14:00 in common room)\nSpeaker: Prof Anna-Karin Tornberg, KTH Stockholm"
+  },
+  {
+    "objectID": "seminar07.html#outline-of-today",
+    "href": "seminar07.html#outline-of-today",
+    "title": "Seminar 07",
+    "section": " Outline of today",
+    "text": "Outline of today\n\nComparing many means\nR ANOVA demo"
+  },
+  {
+    "objectID": "seminar07.html#groups-and-treatments",
+    "href": "seminar07.html#groups-and-treatments",
+    "title": "Seminar 07",
+    "section": "Groups and treatments",
+    "text": "Groups and treatments\nWe would like to consider k groups/treatment populations\nwith means \\mu_1, \\dots, \\mu_k.\nBased on samples from these k groups, how can we determine whether the means are equal across each of the groups?\n\n\n\n\n\n\nMain idea\n\n\nTest procedure based on comparing a measure of difference in variation among the sample means to a measure of variation within each sample."
+  },
+  {
+    "objectID": "seminar07.html#variability-partitioning",
+    "href": "seminar07.html#variability-partitioning",
+    "title": "Seminar 07",
+    "section": "Variability partitioning",
+    "text": "Variability partitioning\nWe consider different factors that contribute to variability in our response variable.\n\n\n\n\n\n\nIn a few weeks, you will take your exam.\n\n\nWhat are some factors that might influence one’s performance on an exam?"
+  },
+  {
+    "objectID": "seminar07.html#sources-of-variability",
+    "href": "seminar07.html#sources-of-variability",
+    "title": "Seminar 07",
+    "section": "Sources of variability",
+    "text": "Sources of variability\nA number of factors might influence performance:\n\nHours spent studying\nCompleting all components (worksheets, labs, perusall)\nPre-exposure (to testing)"
+  },
+  {
+    "objectID": "seminar07.html#partitioning-variability",
+    "href": "seminar07.html#partitioning-variability",
+    "title": "Seminar 07",
+    "section": "Partitioning variability",
+    "text": "Partitioning variability\nIf we wanted to consider how strongly completing all components might influence performance, we can partition variability in performance (score) into:\n\nvariability due to completing all components and\nvariability due to all other factors (explanatory variables)."
+  },
+  {
+    "objectID": "seminar07.html#salary-data",
+    "href": "seminar07.html#salary-data",
+    "title": "Seminar 07",
+    "section": "Salary Data",
+    "text": "Salary Data\nAverage Salary Data reported from 20 local councils.\n\n\n\n\n\n\n\n\n\n\n\n\nNation\nAvg salaries (’000 £)\nSize\nMean\nSd\n\n\n\n\nEngland\n17, 12, 18, 13, 15, 12\n6\n14.5\n2.588\n\n\nN Ireland\n11, 7, 9, 13\n4\n10.0\n2.582\n\n\nScotland\n15, 10, 13, 14, 13\n5\n13.0\n1.871\n\n\nWales\n10, 12, 8, 7, 9\n5\n9.2\n1.924\n\n\n\n\n\n\n\n\n\n\n\nWhat …\n\n\n…are our groups? …means might we compare? …question might we want to ask?\n\n\n\n\n\nk = 4 groups are each nation.\nCompare the mean salary in each nation.\nAsk if the true mean salaries are different across each nation (i.e. if the observed difference is due to chance)"
+  },
+  {
+    "objectID": "seminar07.html#salary-data-exploratory-analysis",
+    "href": "seminar07.html#salary-data-exploratory-analysis",
+    "title": "Seminar 07",
+    "section": "Salary data: exploratory analysis",
+    "text": "Salary data: exploratory analysis"
+  },
+  {
+    "objectID": "seminar07.html#variability-partitioning-salary-data",
+    "href": "seminar07.html#variability-partitioning-salary-data",
+    "title": "Seminar 07",
+    "section": "Variability partitioning : salary data",
+    "text": "Variability partitioning : salary data\n\n\nPartition “total variability” into:\n(.1) variabilty due to nation (between group var) and\n(.2) variability due to all other factors (within group var – nuissance factor)"
+  },
+  {
+    "objectID": "seminar07.html#salary-data-hypothesis-test",
+    "href": "seminar07.html#salary-data-hypothesis-test",
+    "title": "Seminar 07",
+    "section": "Salary data : hypothesis test",
+    "text": "Salary data : hypothesis test\nH_0 : \\text{the average salary is the same accross all nations} (\\mu_{S} = \\mu_{E} = \\mu_{NI} = \\mu_{W})\nH_a : \\text{the average salaries differ between at least one pair of nations}\n\n\n\n\n\nNation\nSize\nMean\nSd\n\n\n\n\nEngland\n6\n14.5\n2.588\n\n\nN Ireland\n4\n10.0\n2.582\n\n\nScotland\n5\n13.0\n1.871\n\n\nWales\n5\n9.2\n1.924\n\n\nUK\n20\n11.9\n3.076"
+  },
+  {
+    "objectID": "seminar07.html#test-statistic",
+    "href": "seminar07.html#test-statistic",
+    "title": "Seminar 07",
+    "section": "Test statistic",
+    "text": "Test statistic\nF = \\frac{\\mathsf{MSTr}}{\\mathsf{MSE}}\n\n\n\n\n\n\n\nWhere have we seen that before?\n\n\n\n\n\n\n\n\nRatio of between and within group variabilities.\n\\mathsf{MSTr} = \\mathsf{SSTr} / \\text{df}_{\\mathsf{Tr}} and \\mathsf{MSE} = \\mathsf{SSE} / \\text{df}_{\\mathsf{E}}"
+  },
+  {
+    "objectID": "seminar07.html#computing-test-statistic",
+    "href": "seminar07.html#computing-test-statistic",
+    "title": "Seminar 07",
+    "section": "Computing test statistic",
+    "text": "Computing test statistic\n\nSum of squares total (measures total variation in response variable) \\mathsf{SST} = \\sum_{i=1}^m (x_i - \\overline{x})^2\nSum of squares treatment/group (measures variability between groups) \\mathsf{SSTr} = \\sum_{j=1}^k m_j (\\overline{x}_j - \\overline{x})^2\nSum of squares error (measures variability within groups) \\mathsf{SSE} = \\mathsf{SST} - \\mathsf{SSTr}\n\n\n\n(.1) sq dev from mean of response\n(.2) sq dev from group means from mean of response, weighted by sample size [explained variability: var in response explained by factors/explanatory variables]\n(.3) i.e. unexplained variation\n(.2) as percent of (1) : percent of variation in response (mean salary) as explained by nation; remainder is not explained by variation in nation."
+  },
+  {
+    "objectID": "seminar07.html#computing-test-statistic-dof",
+    "href": "seminar07.html#computing-test-statistic-dof",
+    "title": "Seminar 07",
+    "section": "Computing test statistic (dof)",
+    "text": "Computing test statistic (dof)\nTo go from sum of squares to mean sum of squares, we need to scale calculations with respect to sample size.\n\ntotal degrees of freedom: \\text{df}_{\\mathsf{T}} = m - 1\ntreatment/group degrees of freedom: \\text{df}_{\\mathsf{Tr}} = k-1\nerror degrees of freedom: \\text{df}_{\\mathsf{E}} = \\text{df}_{\\mathsf{T}} - \\text{df}_{\\mathsf{Tr}} = m - k\n\n\n\n(.1) sample size - 1\n(.2) number groups - 1"
+  },
+  {
+    "objectID": "seminar07.html#test-statistic-and-p-value",
+    "href": "seminar07.html#test-statistic-and-p-value",
+    "title": "Seminar 07",
+    "section": "Test statistic and P-value",
+    "text": "Test statistic and P-value\nF = \\frac{\\mathsf{MSTr}}{\\mathsf{MSE}} = \\frac{\\mathsf{SSTr}/\\text{df}_{\\mathsf{Tr}}}{\\mathsf{SSE} / \\text{df}_{\\mathsf{E}}}\nP-value area under \\mathsf{F} (\\text{df}_{\\mathsf{Tr}}, \\text{df}_{\\mathsf{E}} ) to the right of computed statistic f.\n\npf(obsf, dfTr, dfE, lower.tail = FALSE)\n\n\nIf P-value is small, we reject null hypothesis (i.e. we have sufficient evidence that at least one pair of population means are different from each other at level \\alpha)\nIf P-value is large, we fail to reject null hypothesis (i.e. the data do not provide convincing evidence that at least one pair of population means are different from each other: the observed difference in the sample means are attributed to sampling variability)\n\n\n\nEven though we are considering difference we only consider upper tail of \\mathsf{F} b/c f can never be negative (ratio of two positive measures of variation)"
+  },
+  {
+    "objectID": "seminar07.html#conditions-for-anova",
+    "href": "seminar07.html#conditions-for-anova",
+    "title": "Seminar 07",
+    "section": "Conditions for ANOVA",
+    "text": "Conditions for ANOVA\n\nIndependence\n\nwithin groups\nbetween groups (i.e. NOT paired)\n\nApproximately normal\n\nHow could one check this?\n\nEqual variance (homoscedasticity)"
+  }
+]
