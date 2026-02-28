@@ -103,7 +103,7 @@ What are some factors that might influence one's performance on an exam?
 A number of factors might influence performance:
 
 - Hours spent studying
-- Completing all components (worksheets, labs, perusall)
+- Completing all components (worksheets, labs, reading)
 - Pre-exposure (to testing)
 
 ## Partitioning variability 
@@ -166,7 +166,7 @@ ggplot(df2, aes(x = nation, y = mean_salary)) +
 
 ## Salary data : hypothesis test {.smaller}
 
-$H_0 : \text{the average salary is the same accross all nations}$ ($\mu_{S} = \mu_{E} = \mu_{NI} = \mu_{W}$)
+$H_0 : \text{the average salary is the same across all nations}$ ($\mu_{S} = \mu_{E} = \mu_{NI} = \mu_{W}$)
 
 $H_a : \text{the average salaries differ between at least one pair of nations}$
 
