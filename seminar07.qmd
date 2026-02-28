@@ -1,8 +1,8 @@
 ---
 title: "Seminar 07"
-subtitle: "MA22004"
-date: "2024-10-30"
-author: "Dr Eric Hall   •   ehall001@dundee.ac.uk"
+subtitle: "MA22004/MA52008"
+date: "2026-03-02"
+author: "Dr John McDermott   •   jzmcdermott@dundee.ac.uk"
 format: 
   revealjs:
     chalkboard: true
@@ -58,24 +58,18 @@ theme_lr <- theme(legend.justification = c(1,0), legend.position = c(1,0), legen
 
 ## Reminders 
 
-- Discuss worksheet 6 at Thu workshop. 
-- Mock exam **Fri 2024-11-01** at **15:00**, Perth Rd Accountancy. 
+- Discuss lab 5 at Wed workshop.
+- Discuss worksheet 6 at Thu workshop.
+- Discuss next week's Mock exam.
 
-## Special Announcement `r fa("bullhorn")` `r fa("bullhorn")` `r fa("bullhorn")`
-
-EMS Invited Lecture will take place on 
-
-**Friday, 15 Nov 2024, at 15:00 in Fulton F20** 
-
-(tea served from 14:00 in common room)
-
-Speaker: Prof Anna-Karin Tornberg, KTH Stockholm
 
 ## `r fa("compass")` Outline of today
 
-1. Comparing many means
+1. Quick return to worksheet 5 
 
-2. `R` ANOVA demo
+2. Comparing many means
+
+3. `R` ANOVA demo
 
 
 # Comparing many means {.mySegue .center}
@@ -129,7 +123,7 @@ Average Salary Data reported from 20 local councils.
 dattab <- df |>
  group_by(nation) |>
  summarise(observations = list(mean_salary), n = n(), means = signif(mean(mean_salary), digits = 4), ssds = signif(sd(mean_salary), digits = 4))
-kbl(dattab, col.names = c('Nation', "Avg salaries ('000 £)", 'Size', 'Mean', 'Sd'), align = c("l", "l", "c", "c", "c"), format = "markdown") 
+kbl(dattab, col.names = c('Nation', "Avg salaries ('000 £)", 'Size', 'Mean', 'Sd'), align = c("l", "l", "c", "c", "c"), format = "markdown")
 ```   
 
 :::{.callout-tip}
@@ -167,7 +161,7 @@ ggplot(df2, aes(x = nation, y = mean_salary)) +
 :::{.notes}
 - Partition "total variability" into: 
 - (.1) variabilty due to nation (between group var) and 
-- (.2) variability due to all other factors (within group var -- nuissance factor)
+- (.2) variability due to all other factors (within group var -- nuisance factor)
 :::
 
 ## Salary data : hypothesis test {.smaller}
@@ -195,6 +189,8 @@ $$F = \frac{\mathsf{MSTr}}{\mathsf{MSE}}$$
 
 :::{.callout-warning}
 ## Where have we seen that before?
+
+<!-- Having nothing here causes a render/pandoc/tex error. Adding this commented piece fixes it..!?  -->
 :::
 
 :::{.notes}
